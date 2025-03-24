@@ -1,0 +1,7 @@
+<select (change)="onChooseCurrency($event)">
+  @for(currency of currenciesList(); let i = $index; track i) {
+    <option [value]="currency.value">
+      {{currency.currency}}
+    </option>
+  }
+</select>

@@ -1,0 +1,3 @@
+ <form [formGroup]="FormGroup()">
+   <input [formControlName]="controlName()" [readonly]="isReadonly()" (keydown)="onChangeValue($event)" />
+ </form>
